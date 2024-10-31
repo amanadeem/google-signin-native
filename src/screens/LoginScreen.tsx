@@ -13,14 +13,13 @@ type LoginScreenProps = {
 
 export default function LoginScreen({ navigation }: LoginScreenProps) {
   const [request, response, promptAsync] = Google.useAuthRequest({
-    iosClientId: '541381490206-6clnjqf9rgilo688u450lqpjbpgqrdlf.apps.googleusercontent.com',
-    androidClientId: '541381490206-vtjin1cic6g814beo8m63e58auq0pqg6.apps.googleusercontent.com',
+    androidClientId: '541381490206-r81i82alnqu6da28lf6hregm5i53g6k9.apps.googleusercontent.com',
   });
-
+  
   React.useEffect(() => {
     handleSignInResponse();
   }, [response]);
-
+  
   const handleSignInResponse = async () => {
     if (response?.type === 'success') {
       const { authentication } = response;

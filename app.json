@@ -28,6 +28,11 @@
     "scheme": "expogoogleauth",
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2b1c3324-2d5c-4109-9919-74dad2e4630a"
+      }
     }
   }
 }
